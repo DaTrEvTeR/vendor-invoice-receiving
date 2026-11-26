@@ -1,0 +1,19 @@
+{
+  "document_type": "INVOICE",
+  "vendor": {"name": "Calloway Findings Supply", "address": "77 Industrial Parkway, Attleboro, MA 02703"},
+  "invoice_number": "10482",
+  "invoice_date": "2026-11-06",
+  "currency": "USD",
+  "po_reference": "PO-2026-036",
+  "terms": "Net 30",
+  "lines": [
+    {"line_no": 1, "item_code": "CFS-JR5-Y", "description": "Jump Ring 5mm 14KY", "quantity": 120, "quantity_backordered": 80, "uom": "EA", "unit_price": 1.85, "amount": 222.00, "serial_numbers": []},
+    {"line_no": 2, "item_code": "CFS-LC9-Y", "description": "Lobster Clasp 9mm 14KY", "quantity": 20, "quantity_backordered": 0, "uom": "EA", "unit_price": 24.00, "amount": 480.00, "serial_numbers": []},
+    {"line_no": 3, "item_code": "CFS-EB-Y", "description": "Earring Backs 14KY (pr)", "quantity": 50, "quantity_backordered": 0, "uom": "EA", "unit_price": 6.75, "amount": 337.50, "serial_numbers": []}
+  ],
+  "charges": [{"type": "FREIGHT", "amount": 18.00}],
+  "subtotal": 1039.50,
+  "tax": 0.00,
+  "total": 1057.50,
+  "notes": "Balance of jump rings on backorder, ships separately."
+}

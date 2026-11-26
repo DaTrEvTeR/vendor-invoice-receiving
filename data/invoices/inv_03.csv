@@ -1,0 +1,4 @@
+Invoice No,Invoice Date,Customer PO,Item,Description,Qty,Price,Ext Price,Freight,Invoice Total
+10482,11/03/2026,PO-2026-031,TFC-RP25-18,"14K Yellow Rope Chain 2.5mm 18""",2,420.00,840.00,35.00,"2,085.00"
+10482,11/03/2026,PO-2026-031,TFC-BX10-18,"14K White Box Chain 1.0mm 18""",3,210.00,630.00,35.00,"2,085.00"
+10482,11/03/2026,PO-2026-031,TFC-CB12-16,"14K Yellow Cable Chain 1.2mm 16""",4,145.00,580.00,35.00,"2,085.00"

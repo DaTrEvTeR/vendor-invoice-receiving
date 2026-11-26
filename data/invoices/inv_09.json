@@ -1,0 +1,17 @@
+{
+  "document_type": "INVOICE",
+  "vendor": {"name": "Brightline Diamond Co.", "address": "580 Fifth Avenue, 14th Floor, New York, NY 10036"},
+  "invoice_number": "BDC-INV-55204",
+  "invoice_date": "2026-11-18",
+  "currency": "USD",
+  "po_reference": "PO-2026-044",
+  "terms": "Net 30",
+  "lines": [
+    {"line_no": 1, "item_code": "BDC-R050-GVS2", "description": "Round Brilliant 0.50ct G VS2", "quantity": 3, "uom": "EA", "unit_price": 1450.00, "amount": 4350.00, "serial_numbers": ["RPT-7391190023", "RPT-7391190058"]}
+  ],
+  "charges": [{"type": "INSURED_SHIPPING", "amount": 45.00}],
+  "subtotal": 4350.00,
+  "tax": 0.00,
+  "total": 4395.00,
+  "notes": ""
+}

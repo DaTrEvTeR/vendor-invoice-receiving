@@ -1,0 +1,18 @@
+{
+  "document_type": "MEMO",
+  "vendor": {"name": "Brightline Diamond Co.", "address": "580 Fifth Avenue, 14th Floor, New York, NY 10036"},
+  "invoice_number": "M-2291",
+  "invoice_date": "2026-11-10",
+  "currency": "USD",
+  "po_reference": null,
+  "terms": "Memo 30 days. Return or purchase by 2026-12-10.",
+  "lines": [
+    {"line_no": 1, "item_code": "BDC-R050-GVS2", "description": "Round Brilliant 0.50ct G VS2", "quantity": 2, "uom": "EA", "unit_price": 1450.00, "amount": 2900.00, "serial_numbers": ["RPT-7391025844", "RPT-7391025871"]},
+    {"line_no": 2, "item_code": "BDC-OV100-FVS1", "description": "Oval 1.00ct F VS1", "quantity": 1, "uom": "EA", "unit_price": 5100.00, "amount": 5100.00, "serial_numbers": ["RPT-6620418390"]}
+  ],
+  "charges": [],
+  "subtotal": 8000.00,
+  "tax": 0.00,
+  "total": 8000.00,
+  "notes": "Merchandise on consignment - not an invoice for payment. Title remains with Brightline Diamond Co. until purchased and paid in full."
+}

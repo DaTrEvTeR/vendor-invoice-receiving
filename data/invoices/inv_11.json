@@ -1,0 +1,18 @@
+{
+  "document_type": "CREDIT_MEMO",
+  "vendor": {"name": "Halvorsen Silverworks", "address": "2 Mill Pond Road, Portland, ME 04101"},
+  "invoice_number": "HS-CM-0091",
+  "invoice_date": "2026-11-20",
+  "currency": "USD",
+  "po_reference": null,
+  "references_invoice": "HS-87650",
+  "terms": "Apply to next invoice",
+  "lines": [
+    {"line_no": 1, "item_code": "HS-STK-01", "description": "SS Stackable Ring", "quantity": 5, "uom": "EA", "unit_price": 18.50, "amount": -92.50, "serial_numbers": []}
+  ],
+  "charges": [],
+  "subtotal": -92.50,
+  "tax": 0.00,
+  "total": -92.50,
+  "notes": "Credit for 5 stackable rings returned, RMA 4471."
+}

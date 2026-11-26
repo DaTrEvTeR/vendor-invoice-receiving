@@ -1,0 +1,17 @@
+{
+  "document_type": "INVOICE",
+  "vendor": {"name": "Brightline Diamond Co.", "address": "580 Fifth Avenue, 14th Floor, New York, NY 10036"},
+  "invoice_number": "BDC-INV-55190",
+  "invoice_date": "2026-11-16",
+  "currency": "USD",
+  "po_reference": "PO-2026-029",
+  "terms": "Net 30",
+  "lines": [
+    {"line_no": 1, "item_code": "BDC-R100-HSI1", "description": "Round Brilliant 1.00ct H SI1", "quantity": 1, "uom": "EA", "unit_price": 4536.00, "amount": 4536.00, "serial_numbers": ["RPT-5528093117"]}
+  ],
+  "charges": [{"type": "INSURED_SHIPPING", "amount": 45.00}],
+  "subtotal": 4536.00,
+  "tax": 0.00,
+  "total": 4581.00,
+  "notes": ""
+}

@@ -1,0 +1,19 @@
+{
+  "document_type": "INVOICE",
+  "vendor": {"name": "Meridian Bridal Studio LLC", "address": "1200 Lexington Court, Dallas, TX 75201"},
+  "invoice_number": "MBS-2026-0417",
+  "invoice_date": "2026-11-05",
+  "currency": "USD",
+  "po_reference": "PO-2026-034",
+  "terms": "Net 30",
+  "lines": [
+    {"line_no": 1, "item_code": "MBS-PB4-Y", "description": "Plain Band 4mm 14KY", "quantity": 4, "uom": "EA", "unit_price": 185.00, "amount": 740.00, "serial_numbers": []},
+    {"line_no": 2, "item_code": "MBS-PB4-W", "description": "Plain Band 4mm 14KW", "quantity": 3, "uom": "EA", "unit_price": 190.00, "amount": 570.00, "serial_numbers": []},
+    {"line_no": 3, "item_code": "MBS-HALO-W", "description": "Halo Engagement Setting 14KW", "quantity": 2, "uom": "EA", "unit_price": 720.00, "amount": 1440.00, "serial_numbers": []}
+  ],
+  "charges": [{"type": "SHIPPING_INSURANCE", "amount": 25.00}],
+  "subtotal": 2800.00,
+  "tax": 0.00,
+  "total": 2825.00,
+  "notes": "Please reference invoice number with payment."
+}

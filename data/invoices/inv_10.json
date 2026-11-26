@@ -1,0 +1,17 @@
+{
+  "document_type": "INVOICE",
+  "vendor": {"name": "Calloway Findings Supply", "address": "77 Industrial Parkway, Attleboro, MA 02703"},
+  "invoice_number": "10544",
+  "invoice_date": "2026-11-19",
+  "currency": "USD",
+  "po_reference": "PO-2026-045",
+  "terms": "Net 30",
+  "lines": [
+    {"line_no": 1, "item_code": "CFS-GR14Y", "description": "14K Yellow Casting Grain", "quantity": 25, "uom": "DWT", "unit_price": 74.65, "amount": 1866.25, "serial_numbers": []}
+  ],
+  "charges": [{"type": "FREIGHT", "amount": 15.00}],
+  "subtotal": 1866.25,
+  "tax": 0.00,
+  "total": 1881.25,
+  "notes": "Metal priced per pennyweight."
+}

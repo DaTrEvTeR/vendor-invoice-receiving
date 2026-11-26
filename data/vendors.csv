@@ -1,0 +1,8 @@
+vendor_id,name,country,currency,ships_on_memo
+V01,Thistlewood Fine Chains,US,USD,false
+V02,Brightline Diamond Co.,US,USD,true
+V03,Calloway Findings Supply,US,USD,false
+V04,Meridian Bridal Studio,US,USD,false
+V05,Lucentara Gioielli S.r.l.,IT,EUR,false
+V06,Halvorsen Silverworks,US,USD,false
+V07,Northgate Gem Exchange,US,USD,true

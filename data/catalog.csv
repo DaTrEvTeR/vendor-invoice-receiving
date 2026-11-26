@@ -1,0 +1,41 @@
+sku,name,category,unit,serialized,default_cost,on_hand
+RNG-1001,14K Yellow Gold Plain Band 4mm,ring,each,false,185.00,6
+RNG-1002,14K White Gold Plain Band 4mm,ring,each,false,190.00,5
+RNG-1003,14K Yellow Gold Comfort Fit Band 6mm,ring,each,false,265.00,3
+RNG-1004,Platinum Solitaire Setting 4-Prong,ring,each,false,640.00,2
+RNG-1005,14K White Gold Halo Engagement Setting,ring,each,false,720.00,2
+RNG-1006,18K Yellow Gold Signet Ring,ring,each,false,890.00,1
+RNG-1007,Sterling Silver Stackable Ring,ring,each,false,18.50,24
+RNG-1008,14K Rose Gold Plain Band 3mm,ring,each,false,160.00,4
+CHN-2001,14K Yellow Gold Rope Chain 2.5mm 18in,chain,each,false,420.00,4
+CHN-2002,14K Yellow Gold Rope Chain 2.5mm 20in,chain,each,false,465.00,3
+CHN-2003,14K White Gold Box Chain 1mm 18in,chain,each,false,210.00,5
+CHN-2004,14K Yellow Gold Cable Chain 1.2mm 16in,chain,each,false,145.00,8
+CHN-2005,Sterling Silver Curb Chain 4mm 22in,chain,each,false,38.00,10
+CHN-2006,18K Yellow Gold Figaro Chain 3mm 20in,chain,each,false,980.00,1
+CHN-2007,14K Yellow Gold Franco Chain 3mm 22in,chain,each,false,1150.00,1
+EAR-3001,14K Yellow Gold Hoop Earrings 15mm,earring,each,false,135.00,6
+EAR-3002,14K White Gold Diamond Stud Earrings 0.50ctw,earring,each,false,780.00,2
+EAR-3003,Sterling Silver Huggie Hoops,earring,each,false,22.00,12
+EAR-3004,14K Yellow Gold Pearl Studs 7mm,earring,each,false,95.00,5
+EAR-3005,14K White Gold Blue Topaz Drop Earrings,earring,each,false,240.00,2
+EAR-3006,14K Yellow Gold Huggie Hoops 10mm,earring,each,false,155.00,4
+FND-4001,14K Yellow Gold Lobster Clasp 9mm,finding,each,false,24.00,30
+FND-4002,14K White Gold Lobster Clasp 9mm,finding,each,false,26.00,18
+FND-4003,14K Yellow Gold Jump Ring 5mm,finding,each,false,1.85,250
+FND-4004,Sterling Silver Jump Ring 5mm,finding,each,false,0.18,800
+FND-4005,14K Yellow Gold Spring Ring Clasp 6mm,finding,each,false,14.50,20
+FND-4006,14K Yellow Gold Earring Backs (pair),finding,each,false,6.75,60
+FND-4007,Sterling Silver Earring Backs (pair),finding,each,false,0.60,200
+FND-4008,14K Yellow Gold 4-Prong Head 5mm,finding,each,false,9.80,40
+DIA-5001,Loose Diamond Round 0.50ct G VS2,loose_diamond,each,true,1450.00,2
+DIA-5002,Loose Diamond Round 0.75ct G VS2,loose_diamond,each,true,2600.00,1
+DIA-5003,Loose Diamond Round 1.00ct H SI1,loose_diamond,each,true,4200.00,1
+DIA-5004,Loose Diamond Oval 1.00ct F VS1,loose_diamond,each,true,5100.00,0
+DIA-5005,Melee Diamond Round 1.5mm,loose_diamond,each,false,12.00,150
+MTL-6001,14K Yellow Gold Casting Grain,metal_stock,gram,false,48.00,120
+MTL-6002,18K Yellow Gold Sheet 0.5mm,metal_stock,gram,false,66.00,40
+MTL-6003,Sterling Silver Wire 1mm,metal_stock,gram,false,1.10,500
+MTL-6004,Fine Silver Casting Grain,metal_stock,gram,false,1.05,300
+MTL-6005,14K White Gold Wire 0.8mm,metal_stock,dwt,false,72.00,25
+MTL-6006,Sterling Silver Sheet 0.8mm,metal_stock,gram,false,1.15,400

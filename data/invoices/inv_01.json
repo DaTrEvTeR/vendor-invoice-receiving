@@ -1,0 +1,19 @@
+{
+  "document_type": "INVOICE",
+  "vendor": {"name": "Thistlewood Fine Chains", "address": "410 Foundry Row, Suite 3, Providence, RI 02903"},
+  "invoice_number": "10482",
+  "invoice_date": "2026-11-03",
+  "currency": "USD",
+  "po_reference": "PO-2026-031",
+  "terms": "2% 10 Net 30",
+  "lines": [
+    {"line_no": 1, "item_code": "TFC-RP25-18", "description": "14K Yellow Rope Chain 2.5mm 18in", "quantity": 2, "uom": "EA", "unit_price": 420.00, "amount": 840.00, "serial_numbers": []},
+    {"line_no": 2, "item_code": "TFC-BX10-18", "description": "14K White Box Chain 1.0mm 18in", "quantity": 3, "uom": "EA", "unit_price": 210.00, "amount": 630.00, "serial_numbers": []},
+    {"line_no": 3, "item_code": "TFC-CB12-16", "description": "14K Yellow Cable Chain 1.2mm 16in", "quantity": 4, "uom": "EA", "unit_price": 145.00, "amount": 580.00, "serial_numbers": []}
+  ],
+  "charges": [{"type": "FREIGHT", "amount": 35.00}],
+  "subtotal": 2050.00,
+  "tax": 0.00,
+  "total": 2085.00,
+  "notes": ""
+}
