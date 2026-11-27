@@ -1,4 +1,4 @@
-.PHONY: run up migrate seed reset test outcomes
+.PHONY: run up migrate seed reset test test-coverage outcomes
 
 COMPOSE_RUN = docker compose run --rm backend
 
@@ -27,6 +27,10 @@ reset: .env
 # Run the backend test suite inside the container.
 test: .env
 	$(COMPOSE_RUN) pytest
+
+# Run the backend test suite inside the container with coverage.
+test-coverage: .env
+	$(COMPOSE_RUN) pytest --cov=receiving --cov=config
 
 # Regenerate results/outcomes.json on a fresh, separate database.
 outcomes: .env
