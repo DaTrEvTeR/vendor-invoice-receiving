@@ -1,0 +1,29 @@
+services:
+  backend:
+    build: ./backend
+    env_file: .env
+    # Bind mounts, so the database file and outcomes.json land in the checkout. The backend
+    # runs as the owner of these files (docker-entrypoint.sh); ":z" lets SELinux hosts
+    # (Fedora, RHEL) share them with the container and is ignored elsewhere.
+    volumes:
+      - ./backend:/app:z
+      - ./data:/data:ro,z
+      - ./results:/results:z
+    ports:
+      # Published on this machine only: the API has no login yet (dev-only).
+      - "127.0.0.1:${BACKEND_PORT:-8000}:8000"
+    # Healthy once Django answers HTTP; the frontend waits for that, not just for the container.
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=2)"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+      start_period: 5s
+
+  frontend:
+    build: ./frontend
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:${FRONTEND_PORT:-3000}:3000"

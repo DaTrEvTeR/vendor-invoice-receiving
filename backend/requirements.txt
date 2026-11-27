@@ -1,0 +1,19 @@
+# Runtime
+Django==5.2.19
+djangorestframework==3.18.3
+asgiref==3.13.0
+sqlparse==0.6.1
+
+# Tests
+pytest==9.2.0
+pytest-django==4.14.0
+pytest-cov==7.1.0
+coverage==7.17.5
+iniconfig==2.3.1
+packaging==26.4
+pluggy==1.7.0
+Pygments==2.21.0
+
+# Tooling (pre-commit runs on the host: see .pre-commit-config.yaml)
+pre-commit==4.7.0
+ruff==0.17.6

@@ -1,0 +1,71 @@
+# Code quality hooks for the Django/DRF backend and the Next.js frontend.
+# Setup once: pip install -r backend/requirements.txt && pre-commit install
+# Check everything: pre-commit run --all-files
+
+# data/ is the starting state shipped with the brief: hooks never rewrite it.
+exclude: ^data/
+
+repos:
+  # Generic file hygiene
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+        args: [--fix=lf]
+      - id: check-yaml
+      - id: check-json
+      - id: check-toml
+      - id: check-merge-conflict
+      - id: check-added-large-files
+      - id: detect-private-key
+      - id: debug-statements
+
+  # Python: lint (pyflakes, pycodestyle, bugbear, import order) and formatting
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.17.6
+    hooks:
+      - id: ruff-check
+        args: [--fix]
+      - id: ruff-format
+
+  # Django: rewrite deprecated APIs for the Django version in use
+  - repo: https://github.com/adamchainz/django-upgrade
+    rev: 1.33.0
+    hooks:
+      - id: django-upgrade
+        args: [--target-version, "5.2"]
+
+  # Django: models and migrations must not drift apart
+  - repo: local
+    hooks:
+      - id: django-migrations-check
+        name: django migrations are up to date
+        entry: "env DJANGO_DB_PATH=:memory: python backend/manage.py makemigrations --check --dry-run"
+        language: python
+        additional_dependencies: [Django==5.2.19, djangorestframework==3.18.3]
+        pass_filenames: false
+        files: ^backend/.*\.py$
+
+  # Frontend (Next.js, TypeScript): needs `npm ci` in frontend/ once
+  - repo: local
+    hooks:
+      - id: frontend-eslint
+        name: eslint (frontend)
+        entry: npm --prefix frontend run lint
+        language: system
+        pass_filenames: false
+        files: ^frontend/.*\.(js|jsx|mjs|cjs|ts|tsx)$
+      - id: frontend-prettier
+        name: prettier (frontend)
+        entry: npm --prefix frontend run format:check
+        language: system
+        pass_filenames: false
+        files: ^frontend/.*\.(js|jsx|mjs|cjs|ts|tsx|css|json|md)$
+      - id: frontend-typecheck
+        name: tsc --noEmit (frontend)
+        entry: npm --prefix frontend run typecheck
+        language: system
+        pass_filenames: false
+        files: ^frontend/.*\.(ts|tsx)$

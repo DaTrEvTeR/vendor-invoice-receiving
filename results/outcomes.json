@@ -1,0 +1,218 @@
+{
+  "invoices": [
+    {
+      "file": "inv_01.json",
+      "status": "received",
+      "notes": "Received automatically against PO-2026-031: no discrepancies.",
+      "received_lines": [
+        {
+          "sku": "CHN-2001",
+          "quantity": "2",
+          "unit": "each",
+          "po_number": "PO-2026-031"
+        },
+        {
+          "sku": "CHN-2003",
+          "quantity": "3",
+          "unit": "each",
+          "po_number": "PO-2026-031"
+        },
+        {
+          "sku": "CHN-2004",
+          "quantity": "4",
+          "unit": "each",
+          "po_number": "PO-2026-031"
+        }
+      ]
+    },
+    {
+      "file": "inv_02.json",
+      "status": "needs_review",
+      "notes": "Needs review. Header totals do not reconcile: lines sum to 2750.00, invoice subtotal is 2800.00.",
+      "received_lines": []
+    },
+    {
+      "file": "inv_03.csv",
+      "status": "duplicate",
+      "notes": "Duplicate of inv_01.json: same vendor (V01) and invoice number (10482), already received. Nothing was received.",
+      "received_lines": []
+    },
+    {
+      "file": "inv_04.json",
+      "status": "received",
+      "notes": "Received automatically against PO-2026-036: no discrepancies. Line 1: partial shipment of FND-4003, 120 of 200 each open on PO-2026-036; the vendor reports 80 on backorder.",
+      "received_lines": [
+        {
+          "sku": "FND-4003",
+          "quantity": "120",
+          "unit": "each",
+          "po_number": "PO-2026-036"
+        },
+        {
+          "sku": "FND-4001",
+          "quantity": "20",
+          "unit": "each",
+          "po_number": "PO-2026-036"
+        },
+        {
+          "sku": "FND-4006",
+          "quantity": "50",
+          "unit": "each",
+          "po_number": "PO-2026-036"
+        }
+      ]
+    },
+    {
+      "file": "inv_05.json",
+      "status": "needs_review",
+      "notes": "Needs review. MEMO: goods on consignment, the vendor keeps title. It is not a purchase invoice and is never received into stock; reject it or close it without receipt.",
+      "received_lines": []
+    },
+    {
+      "file": "inv_06.csv",
+      "status": "needs_review",
+      "notes": "Needs review. Line 2: vendor item code 'HS-CG-FS' (Fine Silver Casting Grain) is not mapped to a store SKU for V06; choose the SKU. Line 3: vendor item code 'HS-JR5-SS' (SS Jump Ring 5mm) is not mapped to a store SKU for V06; choose the SKU. The invoice states no subtotal or total; only the line arithmetic was checked.",
+      "received_lines": []
+    },
+    {
+      "file": "inv_07.json",
+      "status": "needs_review",
+      "notes": "Needs review. Line 1: unit 'PR' is not a known unit of measure; enter the quantity of EAR-3002 in each. Line 2: unit 'PR' is not a known unit of measure; enter the quantity of EAR-3005 in each. Line 2: EAR-3005 is not on PO-2026-043.",
+      "received_lines": []
+    },
+    {
+      "file": "inv_08.json",
+      "status": "needs_review",
+      "notes": "Needs review. Line 1: invoice amount 4536.00 for DIA-5003 differs from the PO price: 1 each x 4200.00 = 4200.00.",
+      "received_lines": []
+    },
+    {
+      "file": "inv_09.json",
+      "status": "needs_review",
+      "notes": "Needs review. Line 1: DIA-5001 is serialized; quantity is 3 but 2 certificate number(s) are given. Enter the missing numbers or correct the quantity.",
+      "received_lines": []
+    },
+    {
+      "file": "inv_10.json",
+      "status": "needs_review",
+      "notes": "Needs review. Line 1: invoice amount 1866.25 for MTL-6001 differs from the PO price: 38.879346 gram x 48.00 = 1866.208608. Line 1: 38.879346 gram of MTL-6001 is less than the 40 open on PO-2026-045, and the invoice reports no backorder. Line 1: 25 DWT converted to 38.879346 gram (1 dwt = 1.55517384 gram).",
+      "received_lines": []
+    },
+    {
+      "file": "inv_11.json",
+      "status": "needs_review",
+      "notes": "Needs review. CREDIT_MEMO for invoice HS-87650: a credit for returned goods never adds stock; reject it or close it without receipt. Line 1: 5 x 18.50 = 92.50, but the line amount is -92.50.",
+      "received_lines": []
+    },
+    {
+      "file": "inv_12.csv",
+      "status": "received",
+      "notes": "Received automatically against PO-2026-041: no discrepancies.",
+      "received_lines": [
+        {
+          "sku": "EAR-3001",
+          "quantity": "10",
+          "unit": "each",
+          "po_number": "PO-2026-041"
+        },
+        {
+          "sku": "RNG-1006",
+          "quantity": "2",
+          "unit": "each",
+          "po_number": "PO-2026-041"
+        },
+        {
+          "sku": "EAR-3006",
+          "quantity": "6",
+          "unit": "each",
+          "po_number": "PO-2026-041"
+        }
+      ]
+    }
+  ],
+  "inventory": {
+    "CHN-2001": "6",
+    "CHN-2002": "3",
+    "CHN-2003": "8",
+    "CHN-2004": "12",
+    "CHN-2005": "10",
+    "CHN-2006": "1",
+    "CHN-2007": "1",
+    "DIA-5001": "2",
+    "DIA-5002": "1",
+    "DIA-5003": "1",
+    "DIA-5004": "0",
+    "DIA-5005": "150",
+    "EAR-3001": "16",
+    "EAR-3002": "2",
+    "EAR-3003": "12",
+    "EAR-3004": "5",
+    "EAR-3005": "2",
+    "EAR-3006": "10",
+    "FND-4001": "50",
+    "FND-4002": "18",
+    "FND-4003": "370",
+    "FND-4004": "800",
+    "FND-4005": "20",
+    "FND-4006": "110",
+    "FND-4007": "200",
+    "FND-4008": "40",
+    "MTL-6001": "120",
+    "MTL-6002": "40",
+    "MTL-6003": "500",
+    "MTL-6004": "300",
+    "MTL-6005": "25",
+    "MTL-6006": "400",
+    "RNG-1001": "6",
+    "RNG-1002": "5",
+    "RNG-1003": "3",
+    "RNG-1004": "2",
+    "RNG-1005": "2",
+    "RNG-1006": "3",
+    "RNG-1007": "24",
+    "RNG-1008": "4"
+  },
+  "purchase_orders": {
+    "PO-2026-029": {
+      "DIA-5003": "0"
+    },
+    "PO-2026-031": {
+      "CHN-2001": "2",
+      "CHN-2003": "3",
+      "CHN-2004": "4"
+    },
+    "PO-2026-034": {
+      "RNG-1001": "0",
+      "RNG-1002": "0",
+      "RNG-1005": "0"
+    },
+    "PO-2026-036": {
+      "FND-4001": "20",
+      "FND-4003": "120",
+      "FND-4006": "50"
+    },
+    "PO-2026-038": {
+      "FND-4004": "0",
+      "MTL-6003": "0",
+      "MTL-6004": "0"
+    },
+    "PO-2026-040": {
+      "FND-4005": "0",
+      "FND-4008": "0"
+    },
+    "PO-2026-041": {
+      "EAR-3001": "10",
+      "EAR-3006": "6",
+      "RNG-1006": "2"
+    },
+    "PO-2026-043": {
+      "EAR-3002": "0"
+    },
+    "PO-2026-044": {
+      "DIA-5001": "0"
+    },
+    "PO-2026-045": {
+      "MTL-6001": "0"
+    }
+  }
+}
